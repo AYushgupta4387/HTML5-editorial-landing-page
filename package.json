@@ -1,0 +1,14 @@
+{
+  "name": "github-landing-page-clone",
+  "version": "1.0.0",
+  "description": "GitHub Clone page for Codedamn Hacktober",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ayush Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

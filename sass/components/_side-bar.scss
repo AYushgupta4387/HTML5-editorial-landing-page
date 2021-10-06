@@ -1,0 +1,151 @@
+.side-bar {
+  width: 0;
+  height: inherit;
+  background-color: $bg-clr-1;
+  position: relative;
+  z-index: 1;
+
+  @include respond(phone) {
+    position: absolute;
+    left: 0;
+    padding-bottom: 5rem;
+    box-shadow: 2rem 0 5rem rgba($color: #000000, $alpha: 0.15);
+  }
+}
+
+.side-bar-invisible {
+  visibility: hidden;
+}
+
+.show-sidebar {
+  width: 30rem;
+}
+
+.sb-bars {
+  visibility: hidden;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -9rem;
+  top: 1rem;
+  background-color: $bg-clr-2;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  opacity: 50%;
+
+  @include respond(phone) {
+    visibility: visible; 
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: $text-clr-3;
+  }
+}
+
+.search-bar {
+  &__container {
+    background-color: $bg-clr-2;
+    position: relative;
+  }
+
+  &__bar {
+    width: 85%;
+    margin: 2.4rem 0;
+    padding: 0.6rem 1rem;
+    border: 2px solid $bg-clr-2;
+    color: $text-clr-2;
+    outline: none;
+    border-radius: $common-br;
+  }
+
+  ::placeholder {
+    color: $text-clr-2;
+  }
+
+  &__icon {
+    color: $text-clr-1;
+    position: absolute;
+    right: 12%;
+  }
+}
+
+.menu {
+  &__link-container {
+    &:not(:last-child) {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $text-clr-1;
+    }
+
+    &:not(:first-child) {
+      padding-top: 1.5rem;
+    }
+
+    &--submenu {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      padding-bottom: 5rem;
+      border-bottom: 1px solid $text-clr-1;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $ff-primary;
+    color: $text-clr-2;
+    font-weight: $fw-semi-bold;
+  }
+}
+
+.sb-blogs {
+  &__blog {
+    border-bottom: 1px solid $text-clr-1;
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: $common-br;
+    padding: 3rem 0 2rem 0;
+  }
+}
+
+.contact {
+  &__list-item {
+    padding: 2rem 0;
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid $text-clr-1;
+
+    &:last-child {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__info {
+    text-decoration: none;
+    color: $text-clr-1;
+    font-weight: $fw-semi-bold;
+
+    &--mail-id {
+      text-decoration: underline dotted;
+      text-underline-offset: 0.4rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+.sb-footer {
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    color: $text-clr-1;
+    font-weight: $fw-semi-bold;
+  }
+}

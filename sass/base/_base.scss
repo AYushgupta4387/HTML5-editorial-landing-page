@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  // This defines what 1rem is
+  // = 10px; This is 62.5% of default font-size of the browser which usually is 16px
+  font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+}
+
+/* BODY */
+body {
+  font-size: $fs-body;
+  color: $text-clr-3;
+  display: flex;
+  justify-content: center;
+  font-family: $ff-body;
+}
+
+/* SECTION (add section class to all sections) */
+.section {
+  margin: 0 auto;
+  max-width: 1148px;
+}
+
+/* LIST ITEM */
+li {
+  list-style: none;
+}

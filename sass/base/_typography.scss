@@ -1,0 +1,47 @@
+.heading-primary {
+  font-size: $fs-h1;
+  font-family: $ff-primary;
+
+  @include respond (phone) {
+    font-size: 2.7rem;
+  }
+}
+
+.heading-secondary {
+  font-size: $fs-h2;
+  font-family: $ff-primary;
+  padding-bottom: 1.5rem;
+  margin-bottom: 6rem;
+  display: inline-block;
+  border-bottom: $border-bottom-red;
+}
+
+.heading-tertiary {
+  font-size: $fs-h3;
+  font-family: $ff-primary;
+  padding-bottom: 1rem;
+
+  &--sb {
+    margin-bottom: 5rem;
+    display: inline-block;
+    border-bottom: $border-bottom-red;
+  }
+
+  &--sb-1 {
+    display: inline-block;
+    border-bottom: $border-bottom-red;
+  }
+}
+
+.paragraph {
+  font-weight: $fw-semi-bold;
+  color: $text-clr-1;
+
+  &--header {
+    font-family: $ff-primary;
+  }
+
+  &--contact {
+    padding-bottom: 1rem;
+  }
+}

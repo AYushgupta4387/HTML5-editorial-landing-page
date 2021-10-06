@@ -1,0 +1,75 @@
+.header {
+  &__top-part-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $border-bottom-red;
+    align-items: flex-end;
+
+    @include respond (phone) {
+      align-items: flex-start;
+    }
+  }
+
+  &__bars-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    @include respond (phone) {
+      visibility: hidden;
+    }
+  }
+
+  &__bars-icon {
+    font-size: 2rem;
+    color: $text-clr-4;
+  }
+
+  &__social-links-container {
+    display: flex;
+  }
+
+  &__links {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  &__icon {
+    color: $text-clr-1;
+  }
+
+  &__bottom-part-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    border-bottom: 3px solid $text-clr-1;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-container {
+    max-width: 45rem;
+
+    & > * {
+      /* Here, button is not getting is this property because I have redefined its padding-bottom in buttons file with !important. */
+      padding-bottom: 2.4rem;
+    }
+
+    @include respond(phone) {
+      order: 2;
+    }
+  }
+
+  &__image {
+    max-width: 30rem;
+    height: auto;
+
+    @include respond (phone) {
+      max-width: 100%;
+    }
+  }
+}
