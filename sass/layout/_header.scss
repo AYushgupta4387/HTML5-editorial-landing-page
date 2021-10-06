@@ -8,6 +8,10 @@
     @include respond (phone) {
       align-items: flex-start;
     }
+
+    .light {
+      font-weight: $fw-light;
+    }
   }
 
   &__bars-btn {
@@ -37,6 +41,10 @@
 
   &__icon {
     color: $text-clr-1;
+
+    &:hover {
+      color: $text-clr-4;
+    }
   }
 
   &__bottom-part-container {
@@ -65,8 +73,9 @@
   }
 
   &__image {
-    max-width: 30rem;
+    max-width: 55rem;
     height: auto;
+    border-radius: $common-br;
 
     @include respond (phone) {
       max-width: 100%;

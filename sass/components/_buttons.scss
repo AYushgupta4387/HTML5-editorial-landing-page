@@ -7,4 +7,9 @@
   font-family: $ff-primary;
   font-weight: $fw-semi-bold;
   cursor: pointer;
+
+  &:hover {
+    background-color: $text-clr-4;
+    color: $clr-white;
+  }
 }

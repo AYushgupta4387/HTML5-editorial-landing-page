@@ -76,7 +76,8 @@ li {
   font-weight: 600;
   color: #9fa3a6; }
   .paragraph--header {
-    font-family: "Roboto Slab", serif; }
+    font-family: "Roboto Slab", serif;
+    color: #3d4449; }
   .paragraph--contact {
     padding-bottom: 1rem; }
 
@@ -142,6 +143,9 @@ li {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   cursor: pointer; }
+  .btn:hover {
+    background-color: #f56a6a;
+    color: #fff; }
 
 .side-bar {
   width: 0;
@@ -160,7 +164,7 @@ li {
   visibility: hidden; }
 
 .show-sidebar {
-  width: 30rem; }
+  width: 35rem; }
 
 .sb-bars {
   visibility: hidden;
@@ -192,7 +196,7 @@ li {
   border: 2px solid #eff1f2;
   color: #7f888f;
   outline: none;
-  border-radius: 3px; }
+  border-radius: 5px; }
 
 .search-bar ::placeholder {
   color: #7f888f; }
@@ -229,7 +233,7 @@ li {
 .sb-blogs__image {
   max-width: 100%;
   height: auto;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 3rem 0 2rem 0; }
 
 .contact__list-item {
@@ -249,7 +253,8 @@ li {
     text-underline-offset: 0.4rem; }
 
 .contact__icon {
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  color: #f56a6a; }
 
 .sb-footer__link {
   text-decoration: underline;
@@ -265,6 +270,8 @@ li {
   @media only screen and (max-width: 37.5em) {
     .header__top-part-container {
       align-items: flex-start; } }
+  .header__top-part-container .light {
+    font-weight: 300; }
 
 .header__bars-btn {
   background: transparent;
@@ -288,6 +295,8 @@ li {
 
 .header__icon {
   color: #9fa3a6; }
+  .header__icon:hover {
+    color: #f56a6a; }
 
 .header__bottom-part-container {
   display: flex;
@@ -309,8 +318,9 @@ li {
       order: 2; } }
 
 .header__image {
-  max-width: 30rem;
-  height: auto; }
+  max-width: 55rem;
+  height: auto;
+  border-radius: 5px; }
   @media only screen and (max-width: 37.5em) {
     .header__image {
       max-width: 100%; } }
@@ -342,7 +352,7 @@ li {
         flex-direction: column; } }
   .about__icon-container {
     border: 1.5px solid #9fa3a6;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 2rem;
     height: fit-content;
     width: min-content;
