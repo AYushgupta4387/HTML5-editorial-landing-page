@@ -1,8 +1,8 @@
 .btn {
-  border: 2px solid $text-clr-4;
+  border: $btn-border;
   background-color: transparent;
   padding: 1rem 2rem !important;
-  border-radius: 0.5rem;
+  border-radius: $common-br;
   color: $text-clr-4;
   font-family: $ff-primary;
   font-weight: $fw-semi-bold;
