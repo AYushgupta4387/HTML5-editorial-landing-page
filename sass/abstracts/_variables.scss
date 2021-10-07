@@ -36,8 +36,12 @@ $fw-semi-bold: 600;
 
 // BORDER
 $border-bottom-red: solid 3px $text-clr-4;
-$common-br: 5px;
+$border-bottom-normal: 1px solid $text-clr-1;
+$border-bottom-normal-thick: 3px solid $text-clr-1;
+
 $btn-border: 2px solid $text-clr-4;
+
+$common-br: 5px;
 
 // BOX SHADOW
 $box-shadow: 2rem 0 5rem

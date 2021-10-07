@@ -35,7 +35,7 @@
   top: 1rem;
   background-color: $bg-clr-2;
   padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
+  border-radius: $common-br;
   opacity: 50%;
 
   @include respond(phone) {
@@ -79,7 +79,7 @@
   &__link-container {
     &:not(:last-child) {
       padding-bottom: 1.5rem;
-      border-bottom: 1px solid $text-clr-1;
+      border-bottom: $border-bottom-normal;
     }
 
     &:not(:first-child) {
@@ -93,7 +93,7 @@
 
     &:last-child {
       padding-bottom: 5rem;
-      border-bottom: 1px solid $text-clr-1;
+      border-bottom: $border-bottom-normal;
     }
   }
 
@@ -107,7 +107,7 @@
 
 .sb-blogs {
   &__blog {
-    border-bottom: 1px solid $text-clr-1;
+    border-bottom: $border-bottom-normal;
   }
   &__image {
     max-width: 100%;
@@ -122,7 +122,7 @@
     padding: 2rem 0;
     display: flex;
     align-items: baseline;
-    border-bottom: 1px solid $text-clr-1;
+    border-bottom: $border-bottom-normal;
 
     &:last-child {
       padding-bottom: 5rem;

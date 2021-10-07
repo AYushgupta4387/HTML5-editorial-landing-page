@@ -1,11 +1,12 @@
 .header {
+
   &__top-part-container {
     display: flex;
     justify-content: space-between;
     border-bottom: $border-bottom-red;
     align-items: flex-end;
 
-    @include respond (phone) {
+    @include respond(phone) {
       align-items: flex-start;
     }
 
@@ -20,7 +21,7 @@
     cursor: pointer;
     margin-bottom: 2rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       visibility: hidden;
     }
   }
@@ -52,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5rem 0;
-    border-bottom: 3px solid $text-clr-1;
+    border-bottom: $border-bottom-normal-thick;
 
     @include respond(phone) {
       flex-direction: column;
@@ -77,8 +78,12 @@
     height: auto;
     border-radius: $common-br;
 
-    @include respond (phone) {
-      max-width: 100%;
+    @include respond (tab-land) {
+      max-width: 35rem;
     }
+
+    @include respond(phone) {
+      max-width: 100%;
+    } 
   }
 }

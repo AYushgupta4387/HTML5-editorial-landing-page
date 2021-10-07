@@ -11,7 +11,7 @@
 // ABOUT
 .about {
   padding-bottom: 5rem;
-  border-bottom: 3px solid #9fa3a6;
+  border-bottom: $border-bottom-normal-thick;
 
   &__grid-container {
     text-align: justify;
@@ -66,7 +66,7 @@
 .blogs {
   &__container {
     display: flex;
-    border-bottom: solid 2px $bg-clr-2;
+    border-bottom: $border-bottom-normal-thick;
 
     @include respond (phone) {
       flex-direction: column;
@@ -76,13 +76,13 @@
 
   &__item {
     &--1 {
-      border-right: solid 2px $bg-clr-2;
+      border-right: $border-bottom-normal-thick;
       padding-right: 4rem;
       display: flex;
       flex-direction: column;
 
       @include respond (phone) {
-        border-bottom: solid 2px $bg-clr-2;
+        border-bottom: $border-bottom-normal-thick;
         border-right: none;
         padding-right: 0;
       }
@@ -94,7 +94,7 @@
       flex-direction: column;
 
       @include respond (phone) {
-        border-bottom: solid 2px $bg-clr-2;
+        border-bottom: $border-bottom-normal-thick;
         padding-left: 0;
       }
     }
@@ -122,40 +122,6 @@
       margin-bottom: 3rem;
     }
   }
-
-  /* &__grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-  }
-
-  &__grid-item {
-    padding: 4rem 0;
-
-    &:nth-child(1) {
-      padding-top: 0;
-    }
-
-    &:nth-child(2) {
-      padding-top: 0;
-      display: flex;
-    }
-
-    &:nth-child(odd) {
-      border-right: solid 2px $text-clr-1;
-      border-bottom: solid 2px $text-clr-1;
-      padding-right: 4rem;
-    }
-
-    &:nth-child(even) {
-      border-bottom: solid 2px $text-clr-1;
-      padding-left: 4rem;
-    }
-  }
-
-  &__grid-inner-item {
-    justify-self: flex-end;
-  } */
 
   &__text-container {
     max-width: 85%;

@@ -2,7 +2,15 @@
   font-size: $fs-h1;
   font-family: $ff-primary;
 
-  @include respond (phone) {
+  &--header {
+    margin-top: 0;
+
+    @include respond(phone) {
+      margin-top: 5rem;
+    }
+  }
+
+  @include respond(phone) {
     font-size: 2.7rem;
   }
 }
